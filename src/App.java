@@ -1,17 +1,10 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import controllers.MaquinasController;
-import models.Maquina;
-import models.Node;
-import models.Person;
-import structures.maps.Maps;
-import structures.sets.Sets;
+import structures.maps.EjerciciosMapas;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        //Eduardo Ramon
         /*Sets setsClase = new Sets();
         Set<String> hashSet = setsClase.construirHashSet();
         System.out.println(hashSet);
@@ -43,7 +36,7 @@ public class App {
 
         Set<Person> treePersons = setsClase.personsTreeSet();
         System.out.println(treePersons);
-        System.out.println("Carlos".compareTo("Ana"));*/
+        System.out.println("Carlos".compareTo("Ana"));
 
         //runMaquina();
         runMaps();
@@ -131,4 +124,30 @@ public class App {
         return maquinas;
 
     }
+} */
+    
+ List<Integer> listaEj1 = Arrays.asList(
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+            11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+            21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+            11, 12, 13, 14, 15, 16, 17, 1, 2, 3, 4, 5,
+            6, 7, 8, 9, 10, 18, 19, 20,
+            11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+        );
+
+        List<Integer> listaEj2 = Arrays.asList(
+            4, 5, 1, 2, 5, 4, 3, 2, 1, 6,
+            7, 3, 8, 9, 6, 7, 10
+        );
+
+        System.out.println("===== EJERCICIO 1: FRECUENCIA =====");
+        EjerciciosMapas.frecuenciaElementos(listaEj1);
+
+        System.out.println();
+        System.out.println("===== EJERCICIO 2: PRIMER NO REPETIDO =====");
+        EjerciciosMapas.primerNoRepetido(listaEj2);
+    }
 }
+    
+
