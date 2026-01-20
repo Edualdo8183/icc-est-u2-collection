@@ -1,5 +1,7 @@
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import structures.maps.EjerciciosMapas;
 
 public class App {
@@ -127,26 +129,50 @@ public class App {
 } */
     
  List<Integer> listaEj1 = Arrays.asList(
-            1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-            11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-            21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-            1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-            11, 12, 13, 14, 15, 16, 17, 1, 2, 3, 4, 5,
-            6, 7, 8, 9, 10, 18, 19, 20,
-            11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+            1,2,3,4,5,6,7,8,9,10,
+            11,12,13,14,15,16,17,18,19,20,
+            21,22,23,24,25,26,27,28,29,30,
+            1,2,3,4,5,6,7,8,9,10,
+            11,12,13,14,15,16,17,1,2,3,4,5,
+            6,7,8,9,10,18,19,20,
+            11,12,13,14,15,16,17,18,19,20
         );
 
         List<Integer> listaEj2 = Arrays.asList(
-            4, 5, 1, 2, 5, 4, 3, 2, 1, 6,
-            7, 3, 8, 9, 6, 7, 10
+            4,5,1,2,5,4,3,2,1,6,
+            7,3,8,9,6,7,10
         );
 
-        System.out.println("===== EJERCICIO 1: FRECUENCIA =====");
+        Map<String, Integer> jugadores = new HashMap<>();
+        jugadores.put("Ana", 80);
+        jugadores.put("Luis", 90);
+        jugadores.put("Carlos", 70);
+        jugadores.put("Ana", 85);
+        jugadores.put("Sofia", 95);
+        jugadores.put("Luis", 88);
+        jugadores.put("Pedro", 60);
+        jugadores.put("Maria", 75);
+
+        Map<String, Integer> datos = new HashMap<>();
+        datos.put("Computacion-Ana", 85);
+        datos.put("Computacion-Luis", 92);
+        datos.put("Electronica-Carlos", 78);
+        datos.put("Electronica-Maria", 88);
+        datos.put("Computacion-Pedro", 90);
+        datos.put("Mecanica-Juan", 80);
+        datos.put("Mecanica-Sofia", 95);
+
+        System.out.println("EJERCICIO 1");
         EjerciciosMapas.frecuenciaElementos(listaEj1);
 
-        System.out.println();
-        System.out.println("===== EJERCICIO 2: PRIMER NO REPETIDO =====");
+        System.out.println("\nEJERCICIO 2");
         EjerciciosMapas.primerNoRepetido(listaEj2);
+
+        System.out.println("\nEJERCICIO 3");
+        EjerciciosMapas.rankingJugadores(jugadores);
+
+        System.out.println("\nEJERCICIO 4");
+        EjerciciosMapas.maximoPorCarrera(datos);
     }
 }
     

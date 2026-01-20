@@ -19,5 +19,14 @@ Inserta aquí la captura del código o de la ejecución.
 
 ### Captura 2 
 Inserta aquí una segunda captura si aplica.
-- Archivo: `assets/captura-2.png`
+- Archivo: ![alt text](image-1.png)
+
+
+### Captura 3
+Inserta aquí una segunda captura si aplica.
+- Archivo: ![alt text](image-2.png)
+
+### Captura 4
+Inserta aquí una segunda captura si aplica.
+- Archivo: ![alt text](image-3.png)
 
